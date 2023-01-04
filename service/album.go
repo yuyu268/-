@@ -25,7 +25,7 @@ func NewAlbumService(albumRepository repository.AlbumRepository) *albumService {
 }
 
 func (s *albumService) GetAlbumListService(ctx context.Context) ([]*model.Album, error) {
-	albumss, err := s.albumRepository.GetAll(ctx)
+	albums, err := s.albumRepository.GetAll(ctx)
 	if err != nil {
 		return nil, err
 	}
