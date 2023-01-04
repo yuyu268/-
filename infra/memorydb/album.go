@@ -3,7 +3,7 @@ package memorydb
 import (
 	"sync"
 
-	"github.com/pulse227/server-recruit-challenge-sample/model"
+	"github.com/yuyu268/-/model"
 )
 
 type albumRepository struct {
