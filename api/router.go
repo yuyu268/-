@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/pulse227/server-recruit-challenge-sample/api/middleware"
-	"github.com/pulse227/server-recruit-challenge-sample/controller"
-	"github.com/pulse227/server-recruit-challenge-sample/infra/memorydb"
-	"service"
+	"github.com/yuyu268/-/api/middleware"
+	"github.com/yuyu268/-/controller"
+	"github.com/yuyu268/-/infra/memorydb"
+	"github.com/yuyu268/-/service"
 )
 
 func NewRouter() *mux.Router {
