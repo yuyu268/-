@@ -11,7 +11,7 @@ import (
 	"github.com/yuyu268/-/service"
 )
 
-type singerController struct {
+type albumController struct {
 	service service.AlbumService
 }
 
@@ -66,7 +66,7 @@ func (c *albumController) PostAlbumHandler(w http.ResponseWriter, r *http.Reques
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(200)
-	json.NewEncoder(w).Encode(singer)
+	json.NewEncoder(w).Encode(album)
 }
 
 // DELETE /albums/{id} のハンドラー
