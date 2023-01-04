@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/pulse227/server-recruit-challenge-sample/model"
-	"github.com/pulse227/server-recruit-challenge-sample/repository"
+	"github.com/yuyu268/-/model"
+	"github.com/yuyu268/-/repository"
 )
 
 type SingerService interface {
