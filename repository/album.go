@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/pulse227/server-recruit-challenge-sample/model"
+	"github.com/yuyu268/-/model"
 )
 
 type AlbumRepository interface {
