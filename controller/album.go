@@ -21,7 +21,7 @@ func NewAlbumController(s service.AlbumService) *albumController {
 
 // GET /albums のハンドラー
 func (c *albumController) GetAlbumListHandler(w http.ResponseWriter, r *http.Request) {
-	singers, err := c.service.GetAlbumListService(r.Context())
+	albums, err := c.service.GetAlbumListService(r.Context())
 	if err != nil {
 		errorHandler(w, r, 500, err.Error())
 		return
@@ -47,7 +47,7 @@ func (c *albumController) GetAlbumDetailHandler(w http.ResponseWriter, r *http.R
 	}
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(200)
-	json.NewEncoder(w).Encode(singer)
+	json.NewEncoder(w).Encode(album)
 }
 
 // POST /albums のハンドラー
