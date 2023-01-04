@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/yuyu268/-/model"
-	"github.com/yuyu268/-/repository"
+
 )
 
 type albumRepository struct {
