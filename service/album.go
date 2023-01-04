@@ -15,7 +15,7 @@ type AlbumService interface {
 }
 
 type albumService struct {
-	singerRepository repository.SingerRepository
+	albumRepository repository.AlbumRepository
 }
 
 var _ AlbumService = (*albumService)(nil)
