@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/pulse227/server-recruit-challenge-sample/api"
+	"github.com/yuyu268/-/api"
 )
 
 func main() {
