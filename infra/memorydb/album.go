@@ -16,7 +16,7 @@ type albumRepository struct {
 
 func NewAlbumRepository() *albumRepository {
 	var initMap = map[model.AlbumID]*model.Album{
-		1: {ID: 1, Title: "Alice's 1st Album", SingerID: 1},
+		1: {ID: 1, Title: "Alice's 1st Album", singerMap(SingerID: 1)},
 		2: {ID: 2, Title: "Alice's 2nd Album", SingerID: 1},
 		3: {ID: 3, Title: "Bella's 1st Album", SingerID: 2},
 	}
